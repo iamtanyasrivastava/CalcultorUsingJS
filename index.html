@@ -1,0 +1,58 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <title>Calculator</title>
+        </head>
+        <body>
+            <h1 > Calculator</h1>
+            
+            <div class="form-style">
+                <form name="form1">
+
+
+                    
+                    <input type="text" id="calculator" name="result"/>
+                    <br>
+                    <br>
+
+
+                    <!--buttons with the functions -->
+                    <div class="row">
+                    
+                        <input type="button" value="1" onclick="form1.result.value += '1'"></input>
+                        <input type="button" value="2" onclick="form1.result.value += '2'"></input>
+                        <input type="button" value="3" onclick="form1.result.value += '3'"></input>
+                        <input type="button" class="sign" value="+" onclick="form1.result.value += '+'"></input>
+                    
+                    </div>
+                    <div class="row">
+                        <input type="button" value="4" onclick="form1.result.value += '4'"></input>
+                        <input type="button" value="5" onclick="form1.result.value += '5'"></input>
+                        <input type="button" value="6" onclick="form1.result.value += '6'"></input>
+                        <input type="button" class="sign" value="-" onclick="form1.result.value += '-'"></input>
+                    </div>
+                    <div class="row">
+                        <input type="button" value="7" onclick="form1.result.value += '7'"></input>
+                        <input type="button" value="8" onclick="form1.result.value += '8'"></input>
+                        <input type="button" value="9" onclick="form1.result.value += '9'"></input>
+                        <input type="button" class="sign" value="*" onclick="form1.result.value += '*'"></input>
+                    
+                    </div>
+                    <div class="row">
+                        <input type="button" class="sign" value="/" onclick="form1.result.value += '/'"></input>
+                        <input type="button" value="0" onclick="form1.result.value += '0'"></input>
+                        <input type="button"  class="sign" value="." onclick="form1.result.value += '.'"></input>
+                        <input type="button" class="sign" value="=" onclick="form1.result.value= eval(form1.result.value)""></input>
+                    </div>
+                    <div  class="last-row">
+                    <input type="button"   id="clear" value="Clear All" onclick="form1.result.value = ''"></input>
+                    </div>
+                </form>
+            </div>
+
+                
+        </body>
+        </html>
